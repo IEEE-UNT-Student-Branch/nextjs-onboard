@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	/* Links  */
+		--link-color: var(--ieee-blue);
+		--link-visited-color: purple;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+a {
+	word-wrap: break-word;
+	color: var(--link-color);
+}
+a:visited {
+	color: var(--link-visited-color);
+}
