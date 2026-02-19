@@ -1,27 +1,45 @@
 {
   "compilerOptions": {
+    "module": "esnext",
     "target": "ES2017",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "incremental": true,
-    "module": "esnext",
     "esModuleInterop": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "react-jsx",
+    "noEmit": true,
+    "incremental": true,
     "plugins": [
-      {
-        "name": "next"
-      }
+      { "name": "next" },
+      { "transform": "typescript-transform-paths" }
     ],
+
+    "allowJs": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noPropertyAccessFromIndexSignature": true,
+
+    "jsx": "react-jsx", 
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+
+    "outDir": "./build",
+    "inlineSources": true,
+    "sourceMap": true,
+
     "baseUrl": "src/",
     "paths": {
       "@/components/*": [
@@ -33,8 +51,7 @@
       "@/styles/*": [
         "styles/*"
       ]
-    },
-    "strictNullChecks": true
+    }
   },
   "include": [
     "next-env.d.ts",
