@@ -4,8 +4,8 @@
 
 :root {
 	/* Links  */
-		--link-color: var(--ieee-blue);
-		--link-visited-color: purple;
+	--link-color: var(--ieee-blue);
+	--link-visited-color: purple;
 }
 
 html {
