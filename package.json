@@ -1,6 +1,13 @@
 {
+	"name": "nextjs-onboard",
+	"version": "1.0.0",
+	"description": "A Next.js onboarding project",
+	"type": "module",
+	"engines": {
+		"node": ">=22.x"
+	},
 	"dependencies": {
-		"@types/express": "^5.0.6",
+		"cookie-parser": "^1.4.7",
 		"express": "^5.2.1",
 		"next": "^16.1.6",
 		"react": "^19.2.4",
@@ -9,7 +16,7 @@
 		"typescript-transform-paths": "^3.5.6"
 	},
 	"scripts": {
-		"dev": "next dev",
+		"dev": "NODE_OPTIONS='--inspect' next dev",
 		"build": "next build",
 		"start": "next start",
 		"lint": "eslint",
@@ -17,6 +24,8 @@
 	},
 	"devDependencies": {
 		"@tailwindcss/postcss": "^4.2.0",
+		"@types/cookie-parser": "^1.4.10",
+		"@types/express": "^5.0.6",
 		"@types/node": "25.3.0",
 		"@types/react": "19.2.14",
 		"eslint": "^9.39.1",

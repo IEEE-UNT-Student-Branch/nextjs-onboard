@@ -2,6 +2,12 @@
 
 Practice React.js/Typescript Frontend (70%) and Node.js/Express.js Backend (30%)
 
+TODO:
+
+- Mac support
+
+- Backend features (and compile `tspc -p server/tsconfig.json`)
+
 Create your own portfolio or personal website, from scratch or taking inspiration from [other people's portfolios](https://github.com/emmabostian/developer-portfolios)
 
 - Make 2 separate webpages of content, anything goes
