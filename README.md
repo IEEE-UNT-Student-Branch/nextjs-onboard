@@ -6,7 +6,7 @@ TODO:
 
 - Mac support
 
-- Backend features (and compile `tspc -p server/tsconfig.json`)
+- Backend features (and compile `tspc -p server/tsconfig.json; node server/main.js`) (somehow `node server/main.ts` works?)
 
 Create your own portfolio or personal website, from scratch or taking inspiration from [other people's portfolios](https://github.com/emmabostian/developer-portfolios)
 

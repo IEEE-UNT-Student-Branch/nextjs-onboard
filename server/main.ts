@@ -27,9 +27,15 @@ server.get('/api/debug/cookies', (req: Request, res: Response) => {
 	req.cookies['test_cookie'] = 'This is a test cookie';
 	res.json({ cookies: req.cookies });
 });
-server.post('/api/add', (req: Request, res: Response) => {
+server.put('/api/add', (req: Request, res: Response) => {
 	const payload = req.body;
-	res.json({
-		message: `${payload['a']} + ${payload['b']} = ${parseInt(payload['a']) + parseInt(payload['b'])}`,
-	});
+	if (payload['a'] && payload['b']) {
+		res.json({
+			message: `${payload['a']} + ${payload['b']} = ${parseInt(payload['a']) + parseInt(payload['b'])}`,
+		});
+	} else {
+		res.json({
+			message: "Payload must have an 'a' and 'b' component",
+		});
+	}
 });
