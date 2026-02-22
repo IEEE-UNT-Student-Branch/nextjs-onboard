@@ -10,7 +10,7 @@ Create your own portfolio or personal website, from scratch or taking inspiratio
 
 - Bonus points for streaming/loading dynamic content or animations
 
-### Installation
+## Installation
 
 Install Node Version Manager for Node 22
 
