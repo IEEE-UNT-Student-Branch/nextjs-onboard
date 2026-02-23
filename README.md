@@ -16,12 +16,24 @@ Create your own portfolio or personal website, from scratch or taking inspiratio
 
 - Bonus points for streaming/loading dynamic content or animations
 
-## Installation
+## Setup Instructions
 
-Install Node Version Manager for Node 22
+### Requirements
+
+This project is intended to be used in a Linux environment
+
+> If you use Windows, you can easily install [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) with which VSCode works seamlessly using the [WSL Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
+
+> If you use MacOS, idfk gl (TODO)
+
+### Installation
+
+Pull this repository and install Node Version Manager for Node 22
 
 ```bash
-sudo apt install curl
+sudo apt update && sudo apt upgrade -y
+sudo apt install git curl
+git clone git@github.com:IEEE-UNT-Student-Branch/nextjs-onboard.git
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
 source ~/.bashrc
 
@@ -34,16 +46,17 @@ npm install -g pnpm
 Install Node dependencies
 
 ```bash
+cd nextjs-onboard/
 pnpm install
 ```
 
 ## Development
 
-Run `pnpm run dev` and access [http://localhost:3000](http://localhost:3000) on your browser
+Run `pnpm run web-dev` and access [http://localhost:3000](http://localhost:3000) on your browser
 
-Run `code .` to open the Visual Studio Code in the current directory
+Run `code .` to open Visual Studio Code in the current directory
 
-When debugging with your browser's F12 screen, make sure to enable the "Disable Cache" option
+> When debugging with your browser's F12 screen, make sure to enable the "Disable Cache" option
 
 ### Recommended VSCode Extensions
 
@@ -57,10 +70,33 @@ When debugging with your browser's F12 screen, make sure to enable the "Disable 
 
 ### `src/` (Frontend)
 
-Refer to the [Next.js Docs](https://nextjs.org/docs/pages/getting-started/project-structure) for details. For simplicity, do not use the App router and only use the Pages Router
+> Refer to the [Next.js Docs](https://nextjs.org/docs/pages/getting-started/project-structure) for details. For our case, do not use the App router and only use the Pages Router
+
+```bash
+### Development Commands (Defined in package.json)
+
+pnpm run web-dev        # Real time frontend development
+                        # https://nextjs.org/docs/architecture/fast-refresh
+
+pnpm run web-build      # Compile for production
+
+pnpm run web-start      # Run compiled code
+```
 
 ### `server/` (Backend) (WORK IN PROGRESS)
 
-Refer to [w3schools](https://www.w3schools.com/nodejs/nodejs_express.asp) for a quick overview on making APIs and the [Express.js Docs](https://expressjs.com/en/5x/api.html) for documentation
+> Refer to [w3schools](https://www.w3schools.com/nodejs/nodejs_express.asp) for a quick overview on making APIs and the [Express.js Docs](https://expressjs.com/en/5x/api.html) for documentation
 
-### Etc
+```bash
+### Development Commands (Defined in package.json)
+
+pnpm run api-prepare    # Prepare TS plugins (only need run once)
+
+pnpm run api-dev        # Real time backend development
+
+pnpm run api-build      # Compile for production
+
+pnpm run api-start      # Run compiled code
+```
+
+### Miscellaneous
