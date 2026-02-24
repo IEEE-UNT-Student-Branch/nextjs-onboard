@@ -72,9 +72,9 @@ Run `code .` to open Visual Studio Code in the current directory
 
 > Refer to the [Next.js Docs](https://nextjs.org/docs/pages/getting-started/project-structure) for details. For our case, do not use the App router and only use the Pages Router
 
-```bash
-### Development Commands (Defined in package.json)
+#### Development Commands (Defined in package.json)
 
+```bash
 pnpm run web-dev        # Real time frontend development
                         # https://nextjs.org/docs/architecture/fast-refresh
 
@@ -87,9 +87,15 @@ pnpm run web-start      # Run compiled code
 
 > Refer to [w3schools](https://www.w3schools.com/nodejs/nodejs_express.asp) for a quick overview on making APIs and the [Express.js Docs](https://expressjs.com/en/5x/api.html) for documentation
 
-```bash
-### Development Commands (Defined in package.json)
+Copy `.example.env` to `.env`
 
+```bash
+cp .example.env .env
+```
+
+#### Development Commands (Defined in package.json)
+
+```bash
 pnpm run api-prepare    # Prepare TS plugins (only need run once)
 
 pnpm run api-dev        # Real time backend development
