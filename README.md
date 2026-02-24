@@ -33,7 +33,7 @@ Pull this repository and install Node Version Manager for Node 22
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install git curl
-git clone git@github.com:IEEE-UNT-Student-Branch/nextjs-onboard.git
+git clone https://github.com/IEEE-UNT-Student-Branch/nextjs-onboard.git
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
 source ~/.bashrc
 
