@@ -60,13 +60,13 @@ Run `code .` to open Visual Studio Code in the current directory
 
 ### Recommended VSCode Extensions
 
-| Extension Name                         | Author       | Notes                                                 |
-| -------------------------------------- | ------------ | ----------------------------------------------------- |
-| WSL                                    | Microsoft    | !!! REOPEN WSL AND RUN `code .` AFTER INSTALLING !!!  |
-| ES7+ React/Redux/React-Native snippets | dsznajder    |                                                       |
-| Prettier - Code formatter              | prettier.io  |                                                       |
-| ESLint                                 | Microsoft    |                                                       |
-| Prettier ESLint                        | Rebecca Vest |                                                       |
+| Extension Name                         | Author       | Notes                                                |
+| -------------------------------------- | ------------ | ---------------------------------------------------- |
+| WSL (_if using Windows_)               | Microsoft    | !!! REOPEN WSL AND RUN `code .` AFTER INSTALLING !!! |
+| ES7+ React/Redux/React-Native snippets | dsznajder    |                                                      |
+| Prettier - Code formatter              | prettier.io  | !!! IF WINDOWS, REFER TO WSL NOTES FIRST !!!         |
+| ESLint                                 | Microsoft    | !!! IF WINDOWS, REFER TO WSL NOTES FIRST !!!         |
+| Prettier ESLint                        | Rebecca Vest | !!! IF WINDOWS, REFER TO WSL NOTES FIRST !!!         |
 
 ### `src/` (Frontend)
 
