@@ -24,6 +24,11 @@ This project is intended to be used in a Linux environment
 
 > If you use Windows, you can easily install [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) with which VSCode works seamlessly using the [WSL Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
 
+```sh
+wsl --install -d Ubuntu
+wsl --install --web-download -d Ubuntu    # If command above gets stuck at 0.0%
+```
+
 > If you use MacOS, idfk gl (TODO)
 
 ### Installation
