@@ -27,7 +27,13 @@ wsl --install -d Ubuntu
 wsl --install --web-download -d Ubuntu    # If command above gets stuck at 0.0%
 ```
 
-> If you use <ins>**MacOS**</ins>, you are already using a Unix system, thus you simply need to access the terminal for the installation process. 
+> If you use <ins>**MacOS**</ins>, you are already using a Unix system. Open the terminal and ensure that Homebrew is installed by running:
+```sh
+brew --version
+
+# If Homebrew is not installed, run the Homebrew install command
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
 Also install [<ins>**Visual Studio Code**</ins>](https://code.visualstudio.com/download), from which we will use code formatting extensions. 
 
@@ -58,6 +64,8 @@ pnpm install
 ```
 
 ### Installation (MacOS)
+
+Pull this repository and install Node Version Manager for Node 22
 
 ```bash
 brew update && brew upgrade && brew cleanup
