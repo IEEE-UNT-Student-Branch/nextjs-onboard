@@ -4,8 +4,6 @@ Practice React.js/Typescript Frontend (70%) and Node.js/Express.js Backend (30%)
 
 TODO:
 
-- Mac support
-
 - Backend features (and compile `tspc -p server/tsconfig.json; node server/main.js`) (somehow `node server/main.ts` works?)
 
 Create your own portfolio or personal website, from scratch or taking inspiration from [other people's portfolios](https://github.com/emmabostian/developer-portfolios)
@@ -22,16 +20,20 @@ Create your own portfolio or personal website, from scratch or taking inspiratio
 
 This project is intended to be used in a Linux environment
 
-> If you use Windows, you can easily install [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) with which VSCode works seamlessly using the [WSL Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
+> If you use <ins>**Windows**</ins>, you can easily install [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) with which VSCode works seamlessly using the [WSL Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
 
 ```sh
 wsl --install -d Ubuntu
 wsl --install --web-download -d Ubuntu    # If command above gets stuck at 0.0%
 ```
 
-> If you use MacOS, idfk gl (TODO)
+> If you use <ins>**MacOS**</ins>, you are already using a Unix system, thus you simply need to access the terminal for the installation process. 
 
-### Installation
+Also install [<ins>**Visual Studio Code**</ins>](https://code.visualstudio.com/download), from which we will use code formatting extensions. 
+
+> For best experience, add/install VSCode to `$PATH`
+
+### Installation (Windows WSL)
 
 Pull this repository and install Node Version Manager for Node 22
 
@@ -41,6 +43,28 @@ sudo apt install git curl
 git clone https://github.com/IEEE-UNT-Student-Branch/nextjs-onboard.git
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
 source ~/.bashrc
+
+# Run these commands manually
+nvm install 22.21.1
+nvm use 22
+npm install -g pnpm
+```
+
+Install Node dependencies
+
+```bash
+cd nextjs-onboard/
+pnpm install
+```
+
+### Installation (MacOS)
+
+```bash
+brew update && brew upgrade && brew cleanup
+brew install git curl
+git clone https://github.com/IEEE-UNT-Student-Branch/nextjs-onboard.git
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | zsh
+source ~/.zshrc
 
 # Run these commands manually
 nvm install 22.21.1
@@ -69,9 +93,9 @@ Run `code .` to open Visual Studio Code in the current directory
 | -------------------------------------- | ------------ | ---------------------------------------------------- |
 | WSL (_if using Windows_)               | Microsoft    | !!! REOPEN WSL AND RUN `code .` AFTER INSTALLING !!! |
 | ES7+ React/Redux/React-Native snippets | dsznajder    |                                                      |
-| Prettier - Code formatter              | prettier.io  | !!! IF WINDOWS, REFER TO WSL NOTES FIRST !!!         |
-| ESLint                                 | Microsoft    | !!! IF WINDOWS, REFER TO WSL NOTES FIRST !!!         |
-| Prettier ESLint                        | Rebecca Vest | !!! IF WINDOWS, REFER TO WSL NOTES FIRST !!!         |
+| Prettier - Code formatter              | prettier.io  | !!! IF WINDOWS, REFER TO WSL EXTENSION FIRST !!!     |
+| ESLint                                 | Microsoft    | !!! IF WINDOWS, REFER TO WSL EXTENSION FIRST !!!     |
+| Prettier ESLint                        | Rebecca Vest | !!! IF WINDOWS, REFER TO WSL EXTENSION FIRST !!!     |
 
 ### `src/` (Frontend)
 
